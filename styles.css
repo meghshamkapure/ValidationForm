@@ -1,0 +1,148 @@
+
+None selected 
+
+Skip to content
+Using Gmail with screen readers
+in:sent 
+Conversations
+0.17 GB of 15 GB used
+Terms · Privacy · Program Policies
+Last account activity: 6 minutes ago
+Details
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1, h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-weight: 200;
+    color: white;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.152);
+    padding: 20px;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+#dob{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.form-cont {
+    display: flex;
+    width: 95%;
+    margin: 10px 0px;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.form-cont1
+{
+    display: flex;
+        width: 95%;
+        margin-top: 10px;
+        background-color: black;
+        border-radius: 20px;
+        overflow: hidden;
+        flex-direction: column;
+}
+
+.form-cont2 {
+    display: flex;
+        width: 95%;
+        margin-top: 10px;
+        background-color: black;
+        border-radius: 20px;
+        overflow: hidden;
+        flex-direction: row;
+}
+
+textarea {
+    background-color: black;
+    border: none;
+    color: white;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    height: 100px;
+}
+
+#reqd {
+    color: red;
+}
+
+label {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 16px;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+select {
+    background-color: black;
+    border: none;
+    color: white;
+    width: 70%;
+}
+
+.form-cont input {
+    background-color: black;
+    border: none;
+    color: white;
+    outline: none;
+    width: 70%;
+    font-size: 16px;
+}
+
+#submit-btn {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.err
+{
+    color: red;
+    font-size: 12px ;
+    width: 70%;
+    margin: 5px 0px;
+    margin-left: 35%;
+}

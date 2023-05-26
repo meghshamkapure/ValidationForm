@@ -1,0 +1,82 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="validon.js"></script>
+
+   
+</head>
+<body>
+    <H1>ABC College, Pune </H1>
+    <h2>Admission Form AY 2023-2024</h2>
+
+    <form onsubmit="validateForm()">
+        <div class="formcont">
+        <label for="firstname">First Name <span id="reqd">*</span>:</label>
+        <input type = "text" class="reqdfield1" id="firstname" name="FirstName" value="" onchange="validateFirstName(this)" placeholder="type first name here">
+        </div>
+        <p class="err"></p>
+
+        <div class="formcont">
+        <label for="lastname">Last Name <span id="reqd">*</span>:</label>
+        <input type = "text" id="lastname" class="reqdield" name="LastName" value="" onchange="validateLastName()"  placeholder="type last name here">
+        </div>
+        <p class="err"></p>
+
+        <div class="formcont">
+            <label for="emailid">Email Id <span id="reqd">*</span>:</label>
+            <input type = "text" id="emailid" class="reqdfield" name="EmailId" value="" onchange="validateEmail()" placeholder="type emailid here">
+        </div>
+        <p class="err"></p>
+        
+
+        <div class="formcont">
+            <label for="phoneno">Phone No <span id="reqd">*</span>:</label>
+            <input type = "number" maxlength="10" class="reqdfield" id="PhoneNo" value=""  onchange="validatePhoneNumber()" name="phoneno" placeholder="type phoneno here">
+        </div>
+        <p class="err"></p>
+
+        <div class="formcont2">
+            <label for="dob">Date of Birth :</label>
+            <input type="date"  id="dob" name="dob">
+        </div>
+
+        <div class="formcont">
+            <label for="password">Password <span id="reqd">*</span>:</label>
+            <input type = "password" id="Password" class="reqdfield" name="assword" placeholder="type password">
+        </div>
+        <p class="err"></p>
+        <div class="formcont">
+            <label for="confirmpassword">Confirm  <span id="reqd">*</span>:</label>
+            <input type = "password" id="ConfirmPassword" class="reqdfield" name="confirmpassword" placeholder="retype password">
+        </div>
+        <p class="err"></p>
+
+        <div class="formcont" >
+            <label for="" class="reqdfield">State<span id="reqd">*</span>:</label>
+            <select  id="state" name="state">
+                <option value="Select your state"></option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Goa">Goa</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <div class="formcont1">
+            <label >Address : </label>
+            <textarea id="Address" name ="address" cols="30" rows="1"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" onclick="validateForm()" value="submit" id="SubmitButton">
+        </div>
+    </form>
+    
+</body>
+</html>
